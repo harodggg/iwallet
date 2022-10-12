@@ -1,6 +1,6 @@
 [![Node.js Package](https://github.com/harodggg/iwallet/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/harodggg/iwallet/actions/workflows/npm-publish-github-packages.yml)
 
-
+[![Node.js CI](https://github.com/harodggg/iwallet/actions/workflows/node.js.yml/badge.svg)](https://github.com/harodggg/iwallet/actions/workflows/node.js.yml)
 
 
 # Getting Started with Create React App
