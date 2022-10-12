@@ -38,4 +38,4 @@ jobs:
             yarn publish
             
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NODE_SYS}}
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
