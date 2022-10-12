@@ -28,7 +28,7 @@ const App = () => {
                     defaultSelectedKeys={['Account']}
                     style={{ maxWidth: 220, height: '100%' }}
                     items={[
-                        { itemKey: 'Account', text: 'Account',link:"https://www.baidu.com", icon: <IconHome size="large" /> },
+                        { itemKey: 'Account', text: 'Account', link: 'block', icon: <IconHome size="large" /> },
                         { itemKey: 'Dapp', text: 'Dapp', icon: <IconHistogram size="large" /> },
                         { itemKey: 'Utils', text: 'Utils', icon: <IconLive size="large" /> },
                         { itemKey: 'Setting', text: 'Setting', icon: <IconSetting size="large" /> },
@@ -41,7 +41,7 @@ const App = () => {
                     footer={
                         {
                             collapseButton: true,
-                            children: <><Badge dot style={{ backgroundColor: 'var(--semi-color-success)' }}  /><div> 块高度: 9000</div></>,
+                            children: <><Badge dot style={{ backgroundColor: 'var(--semi-color-success)' }} /><div> 块高度: 9000</div></>,
 
                         }
                     }
@@ -129,14 +129,14 @@ const App = () => {
                             <p>Hi, Bytedance dance dance.</p>
                             <p>Hi, Bytedance dance dance.</p>
                         </Skeleton>
-                    <>
-                        <LocaleProvider locale={en_GB}>
-                            <Pagination total={100} showTotal showSizeChanger style={{ margin: 20 }} />
-                        </LocaleProvider>
-                        <LocaleProvider locale={ja_JP}>
-                            <Pagination total={100} showTotal showSizeChanger style={{ margin: 20 }} />
-                        </LocaleProvider>
-                    </>
+                        <>
+                            <LocaleProvider locale={en_GB}>
+                                <Pagination total={100} showTotal showSizeChanger style={{ margin: 20 }} />
+                            </LocaleProvider>
+                            <LocaleProvider locale={ja_JP}>
+                                <Pagination total={100} showTotal showSizeChanger style={{ margin: 20 }} />
+                            </LocaleProvider>
+                        </>
                     </div>
                 </Content>
                 <Footer
