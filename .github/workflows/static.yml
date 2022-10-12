@@ -38,6 +38,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: yarn, build and test
+        timeout-minutes: 30
+        continue-on-error: true 
         run: |
           yarn
           yarn test 
