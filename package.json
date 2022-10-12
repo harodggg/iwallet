@@ -2,6 +2,12 @@
   "name": "iwallet",
   "version": "0.1.1",
   "private": false,
+    {
+  "name": "@harodggg/iwallet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harodggg/iwallet.git"
+  },
   "dependencies": {
     "@douyinfe/semi-ui": "^2.20.4",
     "@polkadot/extension-dapp": "^0.44.6",
