@@ -1,4 +1,4 @@
-import { Layout, Nav, Button, Notification, Skeleton, Avatar, Badge } from '@douyinfe/semi-ui';
+import { Layout, Nav, Button, Notification, Skeleton, Badge } from '@douyinfe/semi-ui';
 import { IconBell, IconHelpCircle, IconBytedanceLogo, IconHome, IconHistogram, IconLive, IconSetting } from '@douyinfe/semi-icons';
 import { Spin } from '@douyinfe/semi-ui';
 import { IconToutiaoLogo } from '@douyinfe/semi-icons';
