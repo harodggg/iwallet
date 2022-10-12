@@ -1,4 +1,4 @@
-import { Layout, Nav, Button, Breadcrumb, Skeleton, Avatar } from '@douyinfe/semi-ui';
+import { Layout, Nav, Button,Skeleton, Avatar } from '@douyinfe/semi-ui';
 import { IconBell, IconHelpCircle, IconBytedanceLogo, IconHome, IconHistogram, IconLive, IconSetting } from '@douyinfe/semi-icons';
 
 
@@ -60,9 +60,6 @@ const App = () => {
                         backgroundColor: 'var(--semi-color-bg-0)',
                     }}
                 >
-                    <div> h1</div>
-                    <div> h2</div>
-                    <div> h3 <div>h4</div></div>
                     <div
                         style={{
                             borderRadius: '10px',
@@ -71,7 +68,6 @@ const App = () => {
                             padding: '32px',
                         }}
                     >
-                        <div><a>hello</a> kdf<a>good</a></div>
                         <Skeleton placeholder={<Skeleton.Paragraph rows={2} />} loading={true}>
                             <p>Hi, Bytedance dance dance.</p>
                             <p>Hi, Bytedance dance dance.</p>
