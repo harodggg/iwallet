@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/harodggg/iwallet.git"
   },
+  "homepage": "https://harodggg.github.com/iwallet",
   "dependencies": {
     "@douyinfe/semi-ui": "^2.20.4",
     "@polkadot/extension-dapp": "^0.44.6",
