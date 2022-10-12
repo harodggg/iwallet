@@ -1,7 +1,7 @@
 {
   "name": "iwallet",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@douyinfe/semi-ui": "^2.20.4",
     "@polkadot/extension-dapp": "^0.44.6",
