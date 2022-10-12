@@ -2,6 +2,9 @@
   "name": "iwallet",
   "version": "0.1.0",
   "private": false,
+  "publishConfig": {
+   "harodggg:registry": "https://npm.pkg.github.com"
+ },
   "dependencies": {
     "@douyinfe/semi-ui": "^2.20.4",
     "@polkadot/extension-dapp": "^0.44.6",
