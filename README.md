@@ -1,5 +1,6 @@
 [![Node.js CI](https://github.com/harodggg/iwallet/actions/workflows/node.js.yml/badge.svg?branch=main&event=push)](https://github.com/harodggg/iwallet/actions/workflows/node.js.yml)
 [![Publish Package to Github](https://github.com/harodggg/iwallet/actions/workflows/Publish_Package_To_Github.yml/badge.svg?branch=v0.1.7)](https://github.com/harodggg/iwallet/actions/workflows/Publish_Package_To_Github.yml)
+[![Deploy static content to Pages](https://github.com/harodggg/iwallet/actions/workflows/static.yml/badge.svg)](https://github.com/harodggg/iwallet/actions/workflows/static.yml)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
