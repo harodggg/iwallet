@@ -70,9 +70,6 @@ const App = () => {
                                         marginRight: '12px',
                                     }}
                                 />
-                                <Avatar color="orange" size="small">
-                                    YJ
-                                </Avatar>
                             </>
                         }
                     ></Nav>
