@@ -1,7 +1,6 @@
 import { Layout, Nav, Button, Notification, Skeleton, Badge } from '@douyinfe/semi-ui';
 import { IconBell, IconHelpCircle, IconBytedanceLogo, IconHome, IconHistogram, IconLive, IconSetting } from '@douyinfe/semi-icons';
 import { Spin } from '@douyinfe/semi-ui';
-import { IconToutiaoLogo } from '@douyinfe/semi-icons';
 import en_GB from '@douyinfe/semi-ui/lib/es/locale/source/en_GB';
 import ja_JP from '@douyinfe/semi-ui/lib/es/locale/source/ja_JP';
 import { LocaleProvider, Pagination } from '@douyinfe/semi-ui';
@@ -30,6 +29,8 @@ const App = () => {
                     items={[
                         { itemKey: 'Account', text: 'Account', link: 'block', icon: <IconHome size="large" /> },
                         { itemKey: 'Dapp', text: 'Dapp', icon: <IconHistogram size="large" /> },
+                        { itemKey: 'Expore', text: 'Expore', icon: <IconHistogram size='large' /> },
+                        { itemKey: 'Validator', text: 'Validator', icon: <IconHistogram size="large" /> },
                         { itemKey: 'Utils', text: 'Utils', icon: <IconLive size="large" /> },
                         { itemKey: 'Setting', text: 'Setting', icon: <IconSetting size="large" /> },
                     ]}
@@ -41,7 +42,7 @@ const App = () => {
                     footer={
                         {
                             collapseButton: true,
-                            children: <><Badge dot style={{ backgroundColor: 'var(--semi-color-success)' }} /><div> 块高度: 9000</div></>,
+                            children: <><Spin /><Badge dot style={{ backgroundColor: 'var(--semi-color-success)' }} /><div> 块高度: 9000</div></>,
 
                         }
                     }
@@ -54,6 +55,11 @@ const App = () => {
                         mode="horizontal"
                         footer={
                             <>
+                                <Button
+                                    onClick={switchMode}
+                                >
+                                    Switch Mode
+                                </Button>
                                 <Button
                                     theme="borderless"
                                     icon={<IconBell size="large" />}
@@ -70,6 +76,7 @@ const App = () => {
                                         marginRight: '12px',
                                     }}
                                 />
+                                <Spin />
                             </>
                         }
                     ></Nav>
@@ -89,7 +96,6 @@ const App = () => {
                         }}
                     >
                         <Spin />
-                        <Spin />
                         <Spin size="large" />
                         <Spin tip="loading..."></Spin>
                         <br />
@@ -103,29 +109,6 @@ const App = () => {
                         })} style={{ margin: 4 }}>
                             Success
                         </Button>
-
-                        <Button
-                            icon={<IconToutiaoLogo />}
-                            style={{ marginRight: 5 }}
-                            onClick={() =>
-                                Notification.info({
-                                    title: 'Hi, Bytedance',
-                                    content: 'ies dance dance dance',
-                                    duration: 3,
-                                    position: 'topLeft',
-                                    icon: <IconToutiaoLogo style={{ color: 'red' }} />,
-                                })
-                            }
-                        ></Button>
-                        <Button
-                            onClick={switchMode}
-                        >
-                            Switch Mode
-                        </Button>
-                        <Skeleton placeholder={<Skeleton.Paragraph rows={2} />} loading={true} active>
-                            <p>Hi, Bytedance dance dance.</p>
-                            <p>Hi, Bytedance dance dance.</p>
-                        </Skeleton>
                         <>
                             <LocaleProvider locale={en_GB}>
                                 <Pagination total={100} showTotal showSizeChanger style={{ margin: 20 }} />
@@ -134,6 +117,11 @@ const App = () => {
                                 <Pagination total={100} showTotal showSizeChanger style={{ margin: 20 }} />
                             </LocaleProvider>
                         </>
+
+                        <Skeleton placeholder={<Skeleton.Paragraph rows={2} />} loading={true} active>
+                            <p>Hi, Bytedance dance dance.</p>
+                            <p>Hi, Bytedance dance dance.</p>
+                        </Skeleton>
                     </div>
                 </Content>
                 <Footer
