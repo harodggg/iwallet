@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/iwallet/static/css/main.560476bb.css",
-    "main.js": "/iwallet/static/js/main.e469aa01.js",
+    "main.js": "/iwallet/static/js/main.3197e338.js",
     "static/js/787.8131cd35.chunk.js": "/iwallet/static/js/787.8131cd35.chunk.js",
     "index.html": "/iwallet/index.html",
     "main.560476bb.css.map": "/iwallet/static/css/main.560476bb.css.map",
-    "main.e469aa01.js.map": "/iwallet/static/js/main.e469aa01.js.map",
+    "main.3197e338.js.map": "/iwallet/static/js/main.3197e338.js.map",
     "787.8131cd35.chunk.js.map": "/iwallet/static/js/787.8131cd35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.560476bb.css",
-    "static/js/main.e469aa01.js"
+    "static/js/main.3197e338.js"
   ]
 }
