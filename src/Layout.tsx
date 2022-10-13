@@ -35,7 +35,8 @@ const App = () => {
                         { itemKey: 'Setting', text: 'Setting', icon: <IconSetting size="large" /> },
                     ]}
                     header={{
-                        logo: <img src="//lf1-cdn-tos.bytescm.com/obj/ttfe/ies/semi/webcast_logo.svg" alt="iwallet logo" />,
+                        //logo: <img src="//lf1-cdn-tos.bytescm.com/obj/ttfe/ies/semi/webcast_logo.svg" alt="iwallet logo" />,
+                        logo: <img src={process.env.PUBLIC_URL + '/iwallet.png'} alt="iwallet logo" />,
                         text: 'iwallet'
                     }}
 
