@@ -4,6 +4,8 @@ import { Spin } from '@douyinfe/semi-ui';
 import en_GB from '@douyinfe/semi-ui/lib/es/locale/source/en_GB';
 import ja_JP from '@douyinfe/semi-ui/lib/es/locale/source/ja_JP';
 import { LocaleProvider, Pagination } from '@douyinfe/semi-ui';
+import { Card, Row, Col } from '@douyinfe/semi-ui';
+
 
 
 const App = () => {
@@ -96,12 +98,50 @@ const App = () => {
                             padding: '32px',
                         }}
                     >
+                        <div
+                            style={{
+                                backgroundColor: 'var(--semi-color-fill-0)',
+                                padding: 20
+                            }}
+                        >
+                            <Row gutter={[16, 16]}>
+                                <Col span={8}>
+                                    <Card title='账户数' bordered={false} >
+                                        7
+                                    </Card>
+                                </Col>
+                                <Col span={8}>
+                                    <Card title='总余额' bordered={false} >
+                                        99 tssc
+                                    </Card>
+                                </Col>
+                                <Col span={8}>
+                                    <Card title='可转移余额' bordered={false} >
+                                        99 tssc
+                                    </Card>
+                                </Col>
+                            </Row>
+                            <Row gutter={[8, 16]}>
+                                <Col span={8}>
+                                    <Card title='当前网络' bordered={false} >
+                                        Subspace Network
+                                    </Card>
+                                </Col>
+                                <Col span={16}>
+                                    <Card title='当前账户' bordered={false} >
+                                        5CJM7pBAkY8k1eZtWb85jhiApLzNcZ37EuQztm7o9Bwpykqe
+                                    </Card>
+                                </Col>
+                            </Row>
+                        </div>
                         <Spin />
                         <Spin size="large" />
+                        <br />
                         <Spin tip="loading..."></Spin>
                         <br />
                         <br />
                         <div></div>
+
                         <Button type="primary" onClick={() => Notification.success({
                             duration: 3,
                             position: 'topRight',
